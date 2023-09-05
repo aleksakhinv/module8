@@ -1,7 +1,8 @@
 public class GraphicsEditor {
     public static void main(String[] args) {
         Shape circle = new Circle(12);
-        System.out.println(circle.getName());
+        Printer printer = new Printer(circle);
+        printer.printName();
         circle.paint();
         System.out.println("Area is " + circle.getArea());
         try {
